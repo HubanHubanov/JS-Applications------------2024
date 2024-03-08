@@ -1,0 +1,7 @@
+[ ] Unify request logic
+[ ] Extract app navigation
+[ ] Extract rendering logic
+[ ] Improve DOM section control
+[ ] Parameterize form handling
+[ ] Extract local storage operations
+[ ] Create data layer
