@@ -5,9 +5,10 @@ const section = document.getElementById("home-view");
 section.remove()
 
 export function showHomeView() {
-    console.log("showing home");
+    console.log("Showing home");
     start();
-    return section;
+
+    return section
 }
 
 async function start() {
@@ -20,7 +21,7 @@ async function start() {
 
 async function getMovies() {
     const url = 'http://localhost:3030/data/movies?select=_id%2Ctitle%2Cimg';
-    return get(url);
+    return get (url);
 }
 
 function createMoviePreview(movie) {

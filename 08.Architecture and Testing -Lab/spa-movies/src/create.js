@@ -17,18 +17,17 @@ function start() {
 }
 
 async function onPublish({title, img, description}) {
-   
     const url = 'http://localhost:3030/data/movies';
-    const userData = getUserData()
+    const userData = getUserData();
 
     if (!userData) {
         alert('You must be logged in to publish movies!');
         return;
     }
 
-        const movie = await post(url, { title, img, description })
-          
-
-        showView('details-link',  movie._id);
-  
+    
+        const movie = await post (url, { title, img, description })
+         
+       showView('details-link', movie._id);
+    
 }

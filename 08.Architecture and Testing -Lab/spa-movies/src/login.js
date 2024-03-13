@@ -7,7 +7,7 @@ section.remove()
 start();
 
 export function showLoginView() {
-     return section
+   return section
 }
 
 function start() {
@@ -15,13 +15,13 @@ function start() {
     form.addEventListener('submit', createSubmitHandler(onLogin));
 }
 
-async function onLogin({email,password}) {
+async function onLogin({email, password}) {
+    const url = 'http://localhost:3030/users/login';
+   
+     const userData = await post (url, { email, password })
+    //   localStorage.setItem('user', JSON.stringify(userData));
+      saveUserData(userData)
 
-        const url = 'http://localhost:3030/users/login';
-
-        const userData = await  post (url, { email, password });
-        saveUserData(userData);
- 
-        window.location = '/';
-    
+      window.location = '/';
+        
 }

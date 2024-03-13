@@ -12,12 +12,12 @@ export async function showDetailsView(movieId) {
     const movie = await getMovieById(movieId);
     displayDetails(movie);
 
-    return section;
+    return section
 }
 
 async function getMovieById(id) {
     const url = `http://localhost:3030/data/movies/${id}`;
-    return get(url);
+    return get (url);
 }
 
 function displayDetails(movie) {

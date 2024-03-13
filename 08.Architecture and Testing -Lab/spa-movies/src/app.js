@@ -1,16 +1,15 @@
-import { showHomeView } from './home.js';
 import { init, showView } from './nav.js';
+import { showHomeView } from './home.js';
 import { showLoginView } from './login.js';
-import './create.js';
 import { showCreateView } from './create.js';
 import { showDetailsView } from './details.js';
 
 
 const views = {
-    'home-link':  showHomeView,
+    'home-link': showHomeView,
     'login-link': showLoginView,
     'create-link': showCreateView,
-    "details-link": showDetailsView    
+    "details-link": showDetailsView
 };
 
 init(views)

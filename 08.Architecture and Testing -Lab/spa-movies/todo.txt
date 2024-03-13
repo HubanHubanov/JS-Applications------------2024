@@ -4,4 +4,4 @@
 [ ] Improve DOM section control
 [ ] Parameterize form handling
 [ ] Extract local storage operations
-[ ] Create data layer
+[ ] * Create data layer 
