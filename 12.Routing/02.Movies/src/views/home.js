@@ -1,7 +1,7 @@
-import { html, render } from "../lib.js";
+import { html } from "../lib.js";
 
-const homeTemplate = () => html`
-   <section id="home-page" class="view-section">
+const homeTemplate = () =>  html`
+<section id="home-page" class="view-section">
         <div
           class="jumbotron jumbotron-fluid text-light"
           style="background-color: #343a40"
@@ -48,8 +48,6 @@ const homeTemplate = () => html`
       </section>
 `
 
-
-
 export function showHome(ctx) {
-    render(homeTemplate())
+   render(homeTemplate());
 }
