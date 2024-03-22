@@ -44,4 +44,3 @@ export const del = (url) => request("delete", url);
 window.api = {
   get, post, put, del
 }
-
