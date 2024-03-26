@@ -5,10 +5,8 @@ import { html, render } from "../lib.js";
 const catalogTemplate = (motorcycles) => html`
    <h2>Available Motorcycles</h2>
         <section id="dashboard">
-    ${motorcycles.map(motorcycleTemplate    )} 
-        </section>
-         <!-- Display an h2 if there are no posts -->
-         <h2 class="no-avaliable">No avaliable motorcycles yet.</h2>
+     ${motorcycles.length ? motorcycles.map(motorcycleTemplate) : html`<h2 class="no-avaliable">No avaliable motorcycles yet.</h2>`} 
+
 `
 
 const motorcycleTemplate = (motorcycle) => html`
