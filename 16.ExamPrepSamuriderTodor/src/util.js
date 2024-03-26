@@ -21,3 +21,15 @@ export function createSubmitHandler(callback) {
         callback(Object.fromEntries(data), event.target);
     }
 }
+
+export function uppdateNav() {
+        const user = getUserData();
+
+        if(user) {
+            document.querySelector("nav .user").style.display = "block"; 
+            document.querySelector("nav .guest").style.display = "none"; 
+        } else {
+            document.querySelector("nav .user").style.display = "none"; 
+            document.querySelector("nav .guest").style.display = "block"; 
+        }
+}
