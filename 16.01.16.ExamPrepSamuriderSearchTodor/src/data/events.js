@@ -4,7 +4,6 @@ const endpoints = {
     dashboard: "/data/motorcycles?sortBy=_createdOn%20desc",
     motorcycles: "/data/motorcycles",
     motorcyclesById: "/data/motorcycles/"
-
 }
 
 export async function getAllMotorcycles() {
@@ -26,3 +25,8 @@ export async function updateMotorcycle(id, data) {
 export async function deleteMotorcycle(id) {
     del(endpoints.motorcyclesById + id)
 }
+
+export async function searchBike(query) {
+    return  get(`/data/motorcycles?where=model%20LIKE%20%22${query}%22`)
+}
+

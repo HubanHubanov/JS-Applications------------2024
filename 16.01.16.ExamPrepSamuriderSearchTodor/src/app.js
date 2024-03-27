@@ -8,7 +8,8 @@ import { showEdit } from "./views/edit.js";
 import { showHome } from "./views/home.js"
 import { showLogin } from "./views/login.js";
 import { showRegister } from "./views/register.js";
-
+import { showSearch } from "./views/search.js";
+    
 uppdateNav()
 
 page("/", showHome);
@@ -17,7 +18,8 @@ page("/login", showLogin);
 page("/register", showRegister);
 page("/create", showCreate);
 page("/catalog/:id", showDetails);
-page("/edit/:id", showEdit)
+page("/edit/:id", showEdit);
+page("/search", showSearch)
 
 
 page.start()
