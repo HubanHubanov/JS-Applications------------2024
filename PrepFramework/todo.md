@@ -12,7 +12,7 @@
  [ ] Examine project HTML
  [ ] Prepare HTML templates and change anchor href's
  [ ] Adapt user API module (Adapt if there are other, user fields different then the current ones, like username, age, gender, etc)
- [ ] Create Collection API module (Events in this case. In another exam could be recipes)
+ [ ] Create Collection API module (Events in this case. In another exam could be recipes) = EventsFOlder 
    [ ] Read all 
    [ ] Read details - read a single event(itam) by id
    [ ] Create
